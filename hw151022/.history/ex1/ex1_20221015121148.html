@@ -1,0 +1,40 @@
+<!--JavaScript to display current Date and Time.-->
+
+<html>
+  <head>
+    <title>JavaScript to display current Date and Time.</title>
+  </head>
+
+  <script type="text/javascript">
+    function getCurrentDate() {
+      var curDate = new Date();
+
+      document.getElementById("showDate").innerHTML = curDate.toString();
+    }
+  </script>
+
+  <body onLoad="getCurrentDate()" style="text-align: center">
+    <h1>
+      1.Write a JavaScript program to display the current day and time in the
+      following format. Today is : Thursday.
+    </h1>
+
+    <!--Here date and time will display-->
+
+    <h2 id="showDate"></h2>
+    <script src="./ex1.js"></script>
+  </body>
+
+  <!-- 2 -->
+  <body style="text-align: center">
+    <h1 style="color: green">GeeksForGeeks</h1>
+    <input type="text" value="GeeksForGeeks" id="GfGInput" />
+    <button onclick="GeeksForGeeks()">Copy text</button>
+
+    <p>
+      Click on the button to copy the text from the text field. Try to paste the
+      text (e.g. ctrl+v) afterwards in a different window, to see the effect.
+    </p>
+    <script src="./ex1.js"></script>
+  </body>
+</html>
